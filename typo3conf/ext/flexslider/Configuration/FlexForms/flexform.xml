@@ -1,0 +1,293 @@
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+
+	<sheets>
+
+		<!-- General Settings / Begin -->
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.settings
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.showCaption>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.showCaption
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showCaption>
+
+					<settings.slideDirection>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection.horizontal</numIndex>
+										<numIndex index="1">horizontal</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection.vertical</numIndex>
+										<numIndex index="1">vertical</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.slideDirection>
+
+					<settings.controlNav>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.controlNav
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.controlNav>
+
+					<settings.directionNav>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.directionNav
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.directionNav>
+
+					<settings.randomize>
+						<TCEforms>
+							<label>
+									LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.randomize
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.randomize>
+
+					<settings.animationLoop>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animationLoop
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.animationLoop>
+
+				</el>
+			</ROOT>
+		</sDEF>
+		<!-- General Settings / End -->
+
+		<!-- Slideshow Settings / Beging -->
+		<slideshow>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.slideshow
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.slideshow>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshow
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.slideshow>
+
+					<settings.slideshowSpeed>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshowSpeed
+							</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.slideshowSpeed>
+
+					<settings.pauseOnHover>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.pauseOnHover
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.pauseOnHover>
+
+				</el>
+			</ROOT>
+		</slideshow>
+		<!-- Slideshow Settings / End -->
+
+		<!-- Animation Settings / Beging -->
+		<animation>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.animation
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.animation>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.fade</numIndex>
+										<numIndex index="1">fade</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.slide</numIndex>
+										<numIndex index="1">slide</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.animation>
+
+					<settings.animationDuration>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animationDuration
+							</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.animationDuration>
+
+				</el>
+			</ROOT>
+		</animation>
+		<!-- Animation Settings / End -->
+
+		<!-- Image Settings / Beging -->
+		<images>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.images
+					</sheetTitle>
+					<sheetDescription>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab_desc.images
+					</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.images.width>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.width
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.width>
+
+					<settings.images.height>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.height
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.height>
+
+					<settings.images.minWidth>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.minWidth
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.minWidth>
+
+					<settings.images.minHeight>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.minHeight
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.minHeight>
+
+					<settings.images.maxWidth>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.maxWidth
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.maxWidth>
+
+					<settings.images.maxHeight>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.maxHeight
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.maxHeight>
+
+				</el>
+			</ROOT>
+		</images>
+		<!-- Animation Settings / End -->
+
+	</sheets>
+</T3DataStructure>

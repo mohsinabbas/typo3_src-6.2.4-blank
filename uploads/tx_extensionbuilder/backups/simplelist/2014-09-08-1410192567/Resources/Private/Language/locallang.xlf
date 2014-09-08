@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-08T18:00:55Z" product-name="simplelist">
+		<header/>
+		<body>
+			<trans-unit id="tx_simplelist_domain_model_simplelist">
+				<source>Simple List</source>
+			</trans-unit>
+			<trans-unit id="tx_simplelist_domain_model_simplelist.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_simplelist_domain_model_simplelist.detail">
+				<source>Detail</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

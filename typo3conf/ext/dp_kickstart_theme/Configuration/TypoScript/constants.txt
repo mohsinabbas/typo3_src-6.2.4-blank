@@ -1,0 +1,27 @@
+############################
+### CUSTOM SUBCATEGORIES ###
+###########################
+# customsubcategory=100=Page Tempalte
+# customsubcategory=110=Logo
+# customsubcategory=120=Meta Settings
+# customsubcategory=130=File Include Path
+# customsubcategory=140=Content Elements Templates
+# customsubcategory=150=Config
+# customsubcategory=160=Theme
+# customsubcategory=170=News
+
+config {
+    # cat=Kickstart Theme: Settings/150/baseURL; type=string; label=BaseURL: The BaseURL: http://www.domain.com/
+    baseURL =
+}
+
+page {
+    specialPages {
+        page_tsconfig_id = 1
+    }
+    meta {
+        description =
+        author =
+        keywords =
+    }
+}

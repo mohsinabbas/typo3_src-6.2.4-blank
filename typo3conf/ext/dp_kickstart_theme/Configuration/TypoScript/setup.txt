@@ -1,0 +1,14 @@
+# Settings
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/1_Settings/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/1_Settings/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/1_Settings/sitemap.ts">
+
+# Includes
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/2_Includes/includeCSS.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/2_Includes/includeJS.ts">
+
+# Content
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/3_Content/tt_content.ts">
+
+# Extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dp_kickstart_theme/Configuration/TypoScript/4_Extensions/felogin.ts">

@@ -1,0 +1,101 @@
+plugin.tx_flexslider {
+	view {
+		templateRootPath = {$plugin.tx_flexslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_flexslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_flexslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
+	}
+ 	settings {
+ 		css = {$plugin.tx_flexslider.settings.css}
+ 		lib {
+ 			jQuery = {$plugin.tx_flexslider.settings.lib.jQuery}
+ 			flexslider = {$plugin.tx_flexslider.settings.lib.flexslider}
+ 			moveToFooter = {$plugin.tx_flexslider.settings.lib.moveToFooter}
+ 		}
+ 		# Boolean: Define whether the image caption should be shown or not
+ 		showCaption = 1
+		# String: Select your animation type, "fade" or "slide"
+		animation = fade
+		# String: Select the sliding direction, "horizontal" or "vertical"
+		slideDirection = horizontal
+		# Boolean: Animate slider automatically
+		slideshow = 0
+		# Integer: Set the speed of the slideshow cycling, in milliseconds
+		slideshowSpeed = 7000
+		# Integer: Set the speed of animations, in milliseconds
+		animationDuration = 600
+		# Boolean: Display control navigation
+		controlNav = 1
+		# Boolean: Create navigation for previous/next navigation? (true/false)
+		directionNav = 1
+		# Boolean: Allow slider navigating via keyboard left/right keys
+		keyboardNav = 1
+		# Boolean: Allow slider navigating via mousewheel
+		mousewheel = 0
+		# Boolean: Create pause/play dynamic element
+		pausePlay = 0
+		# Boolean: Randomize slide order
+		randomize = 0
+		# Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+		animationLoop = 1
+		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+		pauseOnHover = 0
+		# Image settings in px - experimental!
+		# If you don't really NEED them, just keep the options empty!
+		# Cropping works - just type something like width = 960c
+		images {
+			width =
+			height =
+			minWidth =
+			minHeight =
+			maxWidth =
+			maxHeight =
+		}
+	}
+}
+
+
+/*
+ * Localization via TS
+ */
+plugin.tx_flexslider._LOCAL_LANG.default {
+ 	//prevText =
+ 	//nextText =
+ 	//pauseText =
+ 	//playText =
+}
+
+
+/*
+ * Styles injection via TS
+ */
+plugin.tx_flexslider._CSS_DEFAULT_STYLE (
+
+)
+
+
+/*
+ * Nearly ready-to-use configuration for usage in TypoScript Libs and such.
+ *
+ * Use set persistence.storagePid and let it roll!
+ */
+temp.flexslider = USER
+temp.flexslider {
+	userFunc = tx_extbase_core_bootstrap->run
+	pluginName = Pi1
+	extensionName = Flexslider
+	controller = FlexSlider
+	action = list
+	switchableControllerActions {
+		FlexSlider {
+			1 = list
+		}
+	}
+	settings =< plugin.tx_flexslider.settings
+	persistence =< plugin.tx_flexslider.persistence
+	# Define a storagePid to fetch the records from
+	//persistence.storagePid =
+	view =< plugin.tx_flexslider.view
+}

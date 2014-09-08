@@ -1,0 +1,17 @@
+
+<label for="title">
+	<f:translate key="tx_usermynews_domain_model_usernews.title" />
+</label><br />
+	<f:form.textfield property="title" /><br />
+<label for="image">
+	<f:translate key="tx_usermynews_domain_model_usernews.image" />
+</label><br />
+	<span>File upload is not implemented!</span><br  /><br />
+<label for="date">
+	<f:translate key="tx_usermynews_domain_model_usernews.date" />
+</label><br />
+	<f:form.textfield property="date"  value="{userNews.date->f:format.date()}" /><br />
+<label for="detail">
+	<f:translate key="tx_usermynews_domain_model_usernews.detail" />
+</label><br />
+	<f:form.textarea property="detail" cols="40" rows="15" /><br />

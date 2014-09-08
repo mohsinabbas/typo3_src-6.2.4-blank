@@ -1,0 +1,49 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace dp=DP\DpKickstartTheme\ViewHelpers}
+
+<f:section name="Main">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 hidden-xs">
+                    <v:page.languageMenu class="lang-menu" classCurrent="active" defaultLanguageLabel="D" labelOverwrite="D,E" order="0,1" layout="name" />
+                </div>
+                <div class="col-sm-8">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <dp:page.menu class="nav navbar-nav hidden-xs" />
+                        <dp:page.menu classHasSubpages="dropdown">
+                            <ul class="nav navbar-nav visible-xs">
+                                <f:for each="{menu}" as="page" iteration="pageIterator">
+                                    <li{f:if(condition: '{page.class}', then: ' class="{page.class}"')}>
+                                        <f:if condition="{page.hasSubPages}">
+                                            <f:then>
+                                                <f:link.page pageUid="{page.uid}" additionalAttributes="{data-toggle : 'dropdown'}">{page.linktext}</f:link.page>
+                                                <dp:page.menu pageUid="{page.uid}" class="dropdown-menu" />
+                                            </f:then>
+                                            <f:else>
+                                                <f:link.page pageUid="{page.uid}">{page.linktext}</f:link.page>
+                                            </f:else>
+                                        </f:if>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </dp:page.menu>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <f:link.page pageUid="{rootPage}" class="logo-small">{pageTitle}</f:link.page>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</f:section>

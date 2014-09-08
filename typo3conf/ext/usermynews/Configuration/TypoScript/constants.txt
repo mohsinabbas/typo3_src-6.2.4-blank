@@ -1,0 +1,15 @@
+
+plugin.tx_usermynews {
+	view {
+		# cat=plugin.tx_usermynews/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:usermynews/Resources/Private/Templates/
+		# cat=plugin.tx_usermynews/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:usermynews/Resources/Private/Partials/
+		# cat=plugin.tx_usermynews/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:usermynews/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_usermynews//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
